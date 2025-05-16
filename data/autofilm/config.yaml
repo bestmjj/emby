@@ -1,0 +1,30 @@
+Settings:
+  DEV: True                                      # 开发者模式(可选，默认 False)
+
+Alist2StrmList:
+  #### 完结 ####
+  - id: 阿里云盘-完结
+    #cron: 0 0 2 12 *                    
+    url: http://172.17.0.1:5244
+    username: alist_user
+    password: alist_password
+    source_dir: /aliyun/anime
+    target_dir: /media/anime
+    flatten_mode: False
+    subtitle: True
+    image: True
+    nfo: True
+    raw_url: False
+    overwrite: False
+    max_workers: 5
+    sync_server: False
+    #wait_time: 0.01
+    #after_time: 10
+
+
+TelegramBot:
+  token: "token"
+  allowed_users: []
+  admin_users: [] #管理员
+  proxy_url: ""
+
